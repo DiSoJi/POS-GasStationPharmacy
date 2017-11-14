@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\RestAPI",
+    "\\RestAPI\\PostGasStationFarmacy",
+    "\\RestAPI\\PostGasStationFarmacy\\PostGasStationFarmacy",
+    "\\RestAPI\\PostGasStationFarmacy\\PostGasStationFarmacy\\Models"
+  ],
+  "SelectedNode": "\\RestAPI\\PostGasStationFarmacy\\PostGasStationFarmacy\\Models\\Class1.cs",
+  "PreviewInSolutionExplorer": false
+}
