@@ -1,7 +1,0 @@
-.Context.cs
- public postgresEntities()
-            : base("name=postgresEntities")
-        {
-            this.Configuration.LazyLoadingEnabled = false; //Copiar esto
-            this.Configuration.ProxyCreationEnabled = false; //Copiar esto
-        }
