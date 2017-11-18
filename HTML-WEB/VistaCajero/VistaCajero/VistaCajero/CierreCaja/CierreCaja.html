@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title> Cierra de Caja </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/angular-route.js"></script>
+    <script src="../../ScriptsVistas/InicioCajero.js"></script>
+    <link rel='stylesheet' href='../StyleSheet1.css'>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Cierre de Caja</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../Inicio/Inicio.html">Inicio</a></li>
+                    <li><a href="../Venta/venta.html">Nueva Venta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-10 text-left">
+                <h1>Cierre de Caja.</h1>
+
+                <h4 id="Nombre" ng-model="Nombre">Nombre: {{Nombre}}</h4>
+                <h4 id="ID" ng-model="ID">ID: 116820975</h4>
+                <h4 id="Sucursal" ng-model="Sucursal">Sucursal: Sucursal Numero 1</h4>
+                <h4 id="Empresa" ng-model="Empresa">Empresa: Fishel</h4>
+                <h4 id="Cantidad" ng-model="Cantidad">Dinero total en caja: {{Cantidad}}</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Vista Cajero</p>
+        <h4> Esta vista es exclusivamente para el uso de los cajeros, en esta vista se pueden realizar ventas y la facturacion de la misma</h4>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="es" ng-app="VentaCajero" >
+<head>
+    <meta charset="utf-8" />
+    <title> Nueva Venta </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/angular-route.js"></script>
+    <script src="../../ScriptsVistas/ventaCajero.js"></script>
+    <link rel='stylesheet' href='../StyleSheet1.css'>
+
+    <style>
+
+        .wrapper {
+            text-align: center;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .button {
+            position: absolute;
+        }
+
+        .button1 {
+            position: absolute;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" ng-controller="UsuarioVentaController">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Nueva Venta</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../Inicio/Inicio.html">Inicio</a></li>
+                    <li><a href="../CierreCaja/CierreCaja.html">Cierre de Caja</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center" >
+        <div class="row content">
+            <div class="col-sm-10 text-left">
+                <h3>Nueva Venta.</h3>
+
+                <div class="input-group" data-role = "content">
+                    <form action="/action_page.php">
+                        <fieldset>
+                            Codigo de el producto:  <input id="codigo" type="text" name="codigo" placeholder="Codigo" required ng-model="codigo">
+                            Cantidad: <input id="cantidad" type="number" name="cantidad" placeholder="Cantidad" required ng-model="cantidad">
+                            <button type="button" ng-click="buscar(usuario, contrasena, entrada)">Ingresar</button>
+                        </fieldset>
+                    </form>
+                   
+                </div>
+
+                <br />
+
+                <div>
+                    <table>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>12345678</td>
+                            <td>Pasta Colgate</td>
+                            <td>5</td>
+                            <td><button class="button" type="button" ng-click="ingresar(usuario, contrasena, entrada)">Eliminar</button> </td>
+                        </tr>
+                        <tr>
+                            <td>12345678</td>
+                            <td>Pasta Colgate</td>
+                            <td>5</td>
+                            <td><button class="button" type="button" ng-click="ingresar(usuario, contrasena, entrada)">Eliminar</button> </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br />
+                <div class="wrapper">
+                    <button type="button" ng-click="ingresar(usuario, contrasena, entrada)">Finalizar Venta</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Vista Cajero</p>
+        <h4> Esta vista es exclusivamente para el uso de los cajeros, en esta vista se pueden realizar ventas y la facturacion de la misma</h4>
+    </footer>
+
+
+
+</body>
+</html>
